@@ -1,0 +1,14 @@
+instances:
+  - url: https://robert-noyes-site.docs.buildwithfern.com
+title: Sample | Documentation
+navigation:
+  - page: Overview
+    path: ./pages/overview.mdx
+  - api: API Reference
+colors:
+  accentPrimary: 
+    light: '#123456'
+    dark: '#123456'
+  background: 
+    light: '#ffffff'
+    dark: '#000000'
