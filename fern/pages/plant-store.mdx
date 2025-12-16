@@ -1,0 +1,84 @@
+---
+title: Plant Store
+---
+
+<Note>
+Welcome! This site is the hub for everything you need to integrate with the Plant Store API.
+</Note>
+
+## What you can do with the Plant Store API
+
+The Plant Store API lets you manage your plant catalog programmatically. Common use cases include:
+
+- Creating and updating plants in your inventory
+- Tagging plants for search and categorization
+- Tracking availability and lifecycle status
+- Reacting to plant changes via webhooks
+
+For full request and response details, see the API Reference.
+
+<CardGroup>
+  <Card title="API Reference" icon="fa-solid fa-leaf" href="/api-reference">
+    Explore endpoints, schemas, and example requests.
+  </Card>
+  <Card title="Create a Plant" icon="fa-solid fa-seedling" href="/api-reference/plant/add-plant">
+    The fastest way to make your first successful API call.
+  </Card>
+</CardGroup>
+
+## Before you start
+
+- **Base URL:** `https://api.plantstore.dev/v3`
+- **Content-Type:** `application/json`
+
+## Quickstart: Create a plant
+
+<Tabs>
+  <Tab title="cURL">
+    ```bash
+    curl -X POST https://api.plantstore.dev/v3/plant \
+     -H "Content-Type: application/json" \
+     -d '{
+        "name": "Fern",
+        "category": "Indoor",
+        "tags": [
+            "green",
+            "leafy"
+        ],
+        "status": "available"
+    }'
+    ```
+  </Tab>
+
+  <Tab title="JavaScript">
+    ```js
+    const url = 'https://api.plantstore.dev/v3/plant';
+    const options = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: '{"name":"Fern","category":"Indoor","tags":["green","leafy"],"status":"available"}'
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+    ```
+  </Tab>
+</Tabs>
+
+## Webhooks (optional)
+
+Plant Store can notify your application when plant data changes. Common events include:
+
+- `plant.created`
+- `plant.updated`
+
+<CardGroup>
+  <Card title="Webhook Events" icon="fa-solid fa-bell" href="/api-reference">
+    View webhook event schemas and payload examples.
+  </Card>
+</CardGroup>

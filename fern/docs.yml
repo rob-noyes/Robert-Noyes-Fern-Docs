@@ -1,14 +1,22 @@
 instances:
   - url: https://robert-noyes-site.docs.buildwithfern.com
-title: Sample | Documentation
+title: Plant Store | Documentation
 navigation:
   - page: Overview
     path: ./pages/overview.mdx
+  - page: Plant Store
+    path: ./pages/plant-store.mdx
   - api: API Reference
 colors:
   accentPrimary: 
     light: '#123456'
-    dark: '#123456'
+    dark: '#4DA3FF'
   background: 
     light: '#ffffff'
     dark: '#000000'
+logo:
+  light: ./assets/logo-light.svg
+  dark: ./assets/logo-dark.svg
+favicon: ./assets/favicon.ico
+css: ./style.css
+js: ./custom.js
