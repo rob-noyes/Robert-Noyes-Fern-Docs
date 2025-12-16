@@ -2,8 +2,6 @@ instances:
   - url: https://robert-noyes-site.docs.buildwithfern.com
 title: Plant Store | Documentation
 navigation:
-  - page: Overview
-    path: ./pages/overview.mdx
   - page: Plant Store
     path: ./pages/plant-store.mdx
   - api: API Reference
