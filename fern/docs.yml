@@ -1,6 +1,7 @@
 instances:
   - url: https://robert-noyes-site.docs.buildwithfern.com
 title: Plant Store | Documentation
+favicon: ./assets/favicon.svg
 navigation:
   - page: Plant Store
     path: ./pages/plant-store.mdx
@@ -15,6 +16,5 @@ colors:
 logo:
   light: ./assets/logo-light.svg
   dark: ./assets/logo-dark.svg
-favicon: ./assets/favicon.ico
 css: ./style.css
 js: ./custom.js
