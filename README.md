@@ -16,8 +16,7 @@ The result is a lightweight, developer-friendly docs experience similar to what 
 
 ## Project Structure
 
-fern/
-  assets/            Logos and favicon  
+fern/assets/            Logos and favicon  
   openapi/           OpenAPI specification (api.yml)  
   pages/             MDX documentation pages  
   docs.yml           Docs configuration (navigation, theme, assets)  
@@ -31,7 +30,7 @@ This project uses Fern CLI version 2.4.1.
 
 ### Prerequisites
 
-- Node.js (LTS recommended)
+- Node.js (nvm use 20 recommended)
 - Fern CLI installed globally
 
 Install the Fern CLI:
