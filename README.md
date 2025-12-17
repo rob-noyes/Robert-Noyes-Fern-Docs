@@ -1,35 +1,70 @@
-# Fern Work Sample Demo
+# Plant Store Docs (Fern Take-Home)
 
-You'll be modifying the contents of this repository to create a demo Fern website for a mock Plant Store company. In this scenario, we will be showing the Plant Store company this website, along with the repository used to generate the website, so be sure to keep the repository clean and ready to show a potential client.
+This repository contains a sample documentation site built with Fern for a fictional Plant Store API.  
+It demonstrates API documentation structure, styling, and customization using Fern Docs.
 
-Follow the steps in this `README.md` to get started.
+## Overview
 
-## 1. Installation
+The goal of this project was to:
 
-To start, install the Fern CLI: 
+- Set up a clean, navigable documentation site
+- Document a simple REST API using OpenAPI
+- Apply custom branding and styling
+- Add light UX enhancements using custom CSS and JavaScript
 
-```
-npm install -g fern-api
-```
+The result is a lightweight, developer-friendly docs experience similar to what a production API might provide.
 
-This will allow you to use Fern in the terminal to check and publish your demo site. 
+## Project Structure
 
-## 2. Project Naming
+fern/
+  assets/            Logos and favicon  
+  openapi/           OpenAPI specification (api.yml)  
+  pages/             MDX documentation pages  
+  docs.yml           Docs configuration (navigation, theme, assets)  
+  generators.yml     Fern generators configuration  
+  style.css          Custom site styling  
+  custom.js          Small UI enhancement (floating action button)
 
-Fern requires you to specify a unique organization name and website domain to generate a project. 
+## Running the Docs Locally
 
-First, update the organization name defined in the [`fern.config.json`](/fern/fern.config.json) file to something other than `sample-demo-site`. As an example, you could use `firstName-lastName-demo`
+This project uses Fern CLI version 2.4.1.
 
-Next, update _only the first subdomain_ of the `url` field defined in the [`docs.yml`](/fern/docs.yml) file to something other than `sample-demo-site`. The resulting URL should look something like `firstName-lastName-demo.docs.buildwithfern.com`. 
+### Prerequisites
 
-## 3. Complete the Work Sample
+- Node.js (LTS recommended)
+- Fern CLI installed globally
 
-Complete the steps outlined in the [Overview page](/fern/pages/overview.mdx).
+Install the Fern CLI:
 
-## 4. Push to a GitHub Repository
+npm install -g fern-api@2.4.1
 
-Publish the contents of this folder to a GitHub repository. Be sure to remove any unnecessary files. 
+### Start the docs development server
 
-## 5. Replace this README.md
+From the project root directory, run:
 
-Finally, since we'll be showing the fake Plant Store company this repository during the demo, replace the contents of this `README.md` with some helpful instructions for getting started and using the project. 
+fern docs dev
+
+The documentation will be available at:
+
+http://localhost:3000
+
+## Styling and Customization
+
+Styling is handled using:
+
+- Theme configuration in docs.yml (colors, logos, favicon)
+- Custom CSS in style.css for layout and UI refinement
+- Custom JavaScript in custom.js for a floating action button
+
+The floating action button respects light and dark mode and uses Fern theme variables to stay visually consistent.
+
+## Notes and Tradeoffs
+
+- Authentication was intentionally omitted to keep the example focused
+- API examples prioritize clarity over completeness
+- Styling choices favor subtle, modern UI patterns over heavy branding
+
+## Deployment
+
+This repository is intended for review via GitHub.  
+Publishing the docs to a live Fern instance is optional and not required for evaluation.
